@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    margin: 25px;
+    justify-content: space-around;
+}
+
+.siteImage>img{
+    border-radius: 25px;
+}
+
+.siteslogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.siteslogan>h3{
+    color: blue;
+}
+
+.siteslogan>p{
+    font-style: italic;
+}

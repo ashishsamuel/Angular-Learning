@@ -1,0 +1,9 @@
+<div class="search-section" [ngClass]="{background:searchValue}">
+    <h3>Search : </h3>
+    <!-- event binding -->
+    <!-- <input type="text" placeholder="Enter the search text" (input)="changeSearchValue($event)"> -->
+
+    <!-- two way data binding -->
+    <input type="text" [(ngModel)]="searchValue" />
+    <h4 *ngIf="searchValue">You searched for : - {{searchValue}}</h4>
+</div>

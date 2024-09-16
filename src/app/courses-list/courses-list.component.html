@@ -1,0 +1,13 @@
+<div class="d-flex m-3 flex-wrap justify-content-around">
+    <div *ngFor="let course of courses" class="card my-3" style="width: 18rem;background-color: chocolate;">
+        <div class="card-body">
+            <h5 class="card-title">{{course.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-info">Courses Available</h6>
+            <p class="card-text">{{course.description}}</p>
+            <div class="d-flex justify-content-between">
+                <p class="card-text">Price - {{course.price}}</p>
+                <p class="card-text">Discount - {{course.discount}}</p>
+            </div>
+        </div>
+    </div>
+</div>

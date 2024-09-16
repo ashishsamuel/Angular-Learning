@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: lightyellow;
+}
+
+.company-name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+
+.nav-items{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-items>a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 700;
+}

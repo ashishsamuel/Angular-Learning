@@ -1,0 +1,14 @@
+<!-- <div *ngFor="let product of products;index as i">
+    <h3>{{i}}{{product.id}} --- {{product.name}}</h3>
+</div> -->
+
+<div *ngFor="let product of products;let i =index" class="bg-primary">
+    <div [ngStyle]="{backgroundColor:product.available==='yes'?'yellow':'orange'}" class="d-flex justify-content-around">
+        <h3>{{i}}{{product.id}} --- {{product.name}}</h3>
+            <button [ngStyle]="{color:product.available==='yes'?'green':'red'}">{{product.available}}</button>
+            <button *ngIf="product.available==='yes';else notifyMe">Buy now</button>
+        <ng-template #notifyMe>
+            <button>Notify</button>
+        </ng-template>
+    </div>
+</div>
