@@ -1,0 +1,38 @@
+<div>
+  <div class="d-flex flex-wrap flex-1 align-items-center">
+    <p>Filter By</p>
+    <p class="mx-2">
+        <input
+          type="radio"
+          class="mx-1"
+          name="filteroption"
+          id="allcourse"
+          value="allcourse"
+          [(ngModel)]="filterOptionValue"
+          (change)="selectFilterOption()"
+        /><span style="margin-bottom: 3px">{{'All Courses('+allCourseCount+')'}}</span>
+      </p>
+    <p class="mx-2">
+      <input
+        type="radio"
+        class="mx-1"
+        name="filteroption"
+        id="availablecourse"
+        value="availablecourse"
+        [(ngModel)]="filterOptionValue"
+        (change)="selectFilterOption()"
+      /><span style="margin-bottom: 3px">{{'Available Courses('+availableCourseCount+')'}}</span>
+    </p>
+    <p class="mx-2">
+        <input
+          type="radio"
+          class="mx-1"
+          name="filteroption"
+          id="freecourse"
+          value="freecourse"
+          [(ngModel)]="filterOptionValue"
+          (change)="selectFilterOption()"
+        /><span style="margin-bottom: 3px">{{'Free Courses('+freeCourseCount+')'}}</span>
+      </p>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<div class="d-flex m-4 align-items-center">
+<div class="d-flex my-4 align-items-center">
     <label for="courseName">Course Name : </label>
-    <input type="text" class="search-field" placeholder="Enter Course Name">
+    <input type="text" class="search-field" [(ngModel)]="searchText" (input)="searchCourseText()">
 </div>

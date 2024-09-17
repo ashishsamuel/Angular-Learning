@@ -3,5 +3,6 @@ export interface Course{
     name: string;
     description: string;
     price: string;
-    discount: string;
+    discount?: string;
+    available: string;
 }

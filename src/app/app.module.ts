@@ -13,6 +13,7 @@ import { ProductComponent } from './product/product.component';
 import { CourseHeaderComponent } from './course-header/course-header.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { CourseSearchComponent } from './course-search/course-search.component';
+import { FilterCourseComponent } from './filter-course/filter-course.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CourseSearchComponent } from './course-search/course-search.component';
     ProductComponent,
     CourseHeaderComponent,
     CoursesListComponent,
-    CourseSearchComponent
+    CourseSearchComponent,
+    FilterCourseComponent
   ],
   imports: [
     BrowserModule,
